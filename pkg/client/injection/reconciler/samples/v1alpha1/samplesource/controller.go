@@ -24,6 +24,9 @@ import (
 	reflect "reflect"
 	strings "strings"
 
+	versionedscheme "github.com/juan-lee/eventing-servicebus/pkg/client/clientset/versioned/scheme"
+	client "github.com/juan-lee/eventing-servicebus/pkg/client/injection/client"
+	samplesource "github.com/juan-lee/eventing-servicebus/pkg/client/injection/informers/samples/v1alpha1/samplesource"
 	corev1 "k8s.io/api/core/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	types "k8s.io/apimachinery/pkg/types"
@@ -35,9 +38,6 @@ import (
 	controller "knative.dev/pkg/controller"
 	logging "knative.dev/pkg/logging"
 	reconciler "knative.dev/pkg/reconciler"
-	versionedscheme "knative.dev/sample-source/pkg/client/clientset/versioned/scheme"
-	client "knative.dev/sample-source/pkg/client/injection/client"
-	samplesource "knative.dev/sample-source/pkg/client/injection/informers/samples/v1alpha1/samplesource"
 )
 
 const (

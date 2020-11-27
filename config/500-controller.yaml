@@ -46,7 +46,7 @@ spec:
       containers:
       - name: controller
         terminationMessagePolicy: FallbackToLogsOnError
-        image: ko://knative.dev/sample-source/cmd/controller
+        image: ko://github.com/juan-lee/eventing-servicebus/cmd/controller
 
         resources:
           requests:
@@ -65,7 +65,7 @@ spec:
           - name: METRICS_DOMAIN
             value: knative.dev/sources
           - name: SAMPLE_SOURCE_RA_IMAGE
-            value: ko://knative.dev/sample-source/cmd/receive_adapter
+            value: ko://github.com/juan-lee/eventing-servicebus/cmd/receive_adapter
 
         securityContext:
           allowPrivilegeEscalation: false

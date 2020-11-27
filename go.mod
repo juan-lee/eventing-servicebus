@@ -1,4 +1,4 @@
-module knative.dev/sample-source
+module github.com/juan-lee/eventing-servicebus
 
 go 1.14
 

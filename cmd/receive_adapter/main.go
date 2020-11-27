@@ -16,7 +16,8 @@ package main
 
 import (
 	"knative.dev/eventing/pkg/adapter/v2"
-	myadapter "knative.dev/sample-source/pkg/adapter"
+
+	myadapter "github.com/juan-lee/eventing-servicebus/pkg/adapter"
 )
 
 func main() {

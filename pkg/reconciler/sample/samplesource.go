@@ -31,10 +31,10 @@ import (
 	sourcesv1 "knative.dev/eventing/pkg/apis/sources/v1"
 	reconcilersource "knative.dev/eventing/pkg/reconciler/source"
 
-	"knative.dev/sample-source/pkg/apis/samples/v1alpha1"
-	reconcilersamplesource "knative.dev/sample-source/pkg/client/injection/reconciler/samples/v1alpha1/samplesource"
-	"knative.dev/sample-source/pkg/reconciler"
-	"knative.dev/sample-source/pkg/reconciler/sample/resources"
+	"github.com/juan-lee/eventing-servicebus/pkg/apis/samples/v1alpha1"
+	reconcilersamplesource "github.com/juan-lee/eventing-servicebus/pkg/client/injection/reconciler/samples/v1alpha1/samplesource"
+	"github.com/juan-lee/eventing-servicebus/pkg/reconciler"
+	"github.com/juan-lee/eventing-servicebus/pkg/reconciler/sample/resources"
 )
 
 // Reconciler reconciles a SampleSource object

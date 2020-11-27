@@ -44,7 +44,7 @@ spec:
       containers:
         - name: samplesource-webhook
           terminationMessagePolicy: FallbackToLogsOnError
-          image: ko://knative.dev/sample-source/cmd/webhook
+          image: ko://github.com/juan-lee/eventing-servicebus/cmd/webhook
           env:
           - name: SYSTEM_NAMESPACE
             valueFrom:

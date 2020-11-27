@@ -19,9 +19,9 @@ limitations under the License.
 package v1alpha1
 
 import (
+	v1alpha1 "github.com/juan-lee/eventing-servicebus/pkg/apis/samples/v1alpha1"
+	"github.com/juan-lee/eventing-servicebus/pkg/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
-	v1alpha1 "knative.dev/sample-source/pkg/apis/samples/v1alpha1"
-	"knative.dev/sample-source/pkg/client/clientset/versioned/scheme"
 )
 
 type SamplesV1alpha1Interface interface {
